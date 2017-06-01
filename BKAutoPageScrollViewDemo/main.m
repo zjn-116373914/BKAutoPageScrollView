@@ -2,7 +2,7 @@
 //  main.m
 //  BKAutoPageScrollViewDemo
 //
-//  Created by 张加宁 on 2017/5/18.
+//  Created by 张加宁 on 2017/6/1.
 //  Copyright © 2017年 BlackKnife. All rights reserved.
 //
 

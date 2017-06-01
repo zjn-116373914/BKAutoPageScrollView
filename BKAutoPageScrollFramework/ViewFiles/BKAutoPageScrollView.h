@@ -1,12 +1,13 @@
 #import <UIKit/UIKit.h>
-
-@interface BKAutoPageScrollView : UIScrollView
 typedef void(^blockOfAutoPageScrollView)(NSInteger);
 
+
+@interface BKAutoPageScrollView : UIView
 @property(nonatomic,copy) blockOfAutoPageScrollView blockToTagImageViewAction;
 
 /**[初始化]**/
 + (instancetype)autoPageScrollView;
+/**[重构方法]**/
 - (instancetype)initImagesNameArray:(NSArray*)imagesNameArray;
 
 /**[添加单一图像]到主视图中**/
@@ -21,11 +22,9 @@ typedef void(^blockOfAutoPageScrollView)(NSInteger);
 /**最终加载[主方法]**/
 - (void)loadAutoPageScrollViewMainFunction;
 
-
 /*mainTimer计时器[启动]*/
 - (void)playMainTimerAction;
 /*mainTimer计时器[关闭]*/
 - (void)stopMainTimerAction;
-
 
 @end

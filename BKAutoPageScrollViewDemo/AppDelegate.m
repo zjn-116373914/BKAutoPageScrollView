@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  BKAutoPageScrollViewDemo
 //
-//  Created by 张加宁 on 2017/5/18.
+//  Created by 张加宁 on 2017/6/1.
 //  Copyright © 2017年 BlackKnife. All rights reserved.
 //
 
@@ -24,8 +24,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    MainViewController *mainCtl = [[MainViewController alloc] init];
-    UINavigationController *mainNavCtl = [[UINavigationController alloc] initWithRootViewController:mainCtl];
+    
+    MainViewController *mainViewCtl = [[MainViewController alloc] init];
+    UINavigationController *mainNavCtl = [[UINavigationController alloc] initWithRootViewController:mainViewCtl];
     self.window.rootViewController = mainNavCtl;
     
     return YES;

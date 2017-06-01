@@ -2,7 +2,7 @@
 //  MainViewController.m
 //  BKAutoPageScrollViewDemo
 //
-//  Created by 张加宁 on 2017/5/18.
+//  Created by 张加宁 on 2017/6/1.
 //  Copyright © 2017年 BlackKnife. All rights reserved.
 //
 
@@ -14,7 +14,6 @@
 #import "FourthViewController.h"
 #import "FifthViewController.h"
 
-
 @interface MainViewController ()
 
 @end
@@ -25,6 +24,8 @@
 {
     [super viewDidLoad];
     self.title = @"首页";
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     
     NSMutableArray *mainImagesMarr = [[NSMutableArray alloc] init];
     [mainImagesMarr addObject:@"IMG_01.png"];
@@ -33,8 +34,7 @@
     [mainImagesMarr addObject:@"IMG_04.png"];
     [mainImagesMarr addObject:@"IMG_05.png"];
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    BKAutoPageScrollView *mainScrollView = [[BKAutoPageScrollView autoPageScrollView] initImagesNameArray:mainImagesMarr];
+     BKAutoPageScrollView *mainScrollView = [[BKAutoPageScrollView autoPageScrollView] initImagesNameArray:mainImagesMarr];
     mainScrollView.blockToTagImageViewAction = ^(NSInteger tagOfImageView)
     {
         FirstViewController *firstCtl = [[FirstViewController alloc] init];
@@ -78,5 +78,7 @@
     [mainScrollView loadAutoPageScrollViewMainFunction];
     [self.view addSubview:mainScrollView];
 }
+
+
 
 @end
