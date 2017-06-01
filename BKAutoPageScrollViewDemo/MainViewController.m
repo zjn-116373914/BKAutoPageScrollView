@@ -26,6 +26,7 @@
     self.title = @"首页";
     self.automaticallyAdjustsScrollViewInsets = NO;
     
+    //框架外[核心代码]
     NSMutableArray *mainImagesMarr = [[NSMutableArray alloc] init];
     [mainImagesMarr addObject:@"IMG_01.png"];
     [mainImagesMarr addObject:@"IMG_02.png"];
@@ -73,6 +74,7 @@
         }
     };
     [mainScrollView loadAutoPageScrollViewMainFunction];
+    //------------------------------------------------------------
     
     [self.view addSubview:mainScrollView];
 }
