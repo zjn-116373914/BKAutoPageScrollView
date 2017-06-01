@@ -26,7 +26,6 @@
     self.title = @"首页";
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    
     NSMutableArray *mainImagesMarr = [[NSMutableArray alloc] init];
     [mainImagesMarr addObject:@"IMG_01.png"];
     [mainImagesMarr addObject:@"IMG_02.png"];
@@ -34,39 +33,38 @@
     [mainImagesMarr addObject:@"IMG_04.png"];
     [mainImagesMarr addObject:@"IMG_05.png"];
     
-     BKAutoPageScrollView *mainScrollView = [[BKAutoPageScrollView autoPageScrollView] initImagesNameArray:mainImagesMarr];
+    BKAutoPageScrollView *mainScrollView = [[BKAutoPageScrollView autoPageScrollView] initImagesNameArray:mainImagesMarr];
     mainScrollView.blockToTagImageViewAction = ^(NSInteger tagOfImageView)
     {
-        FirstViewController *firstCtl = [[FirstViewController alloc] init];
-        SecondViewController *secondCtl = [[SecondViewController alloc] init];
-        ThirdViewController *thirdCtl = [[ThirdViewController alloc] init];
-        FourthViewController *fourthCtl = [[FourthViewController alloc] init];
-        FifthViewController *fifthCtl = [[FifthViewController alloc] init];
-        
         switch (tagOfImageView)
         {
             case 100:
             {
+                FirstViewController *firstCtl = [[FirstViewController alloc] init];
                 [self.navigationController pushViewController:firstCtl animated:YES];
             }break;
                 
             case 101:
             {
+                SecondViewController *secondCtl = [[SecondViewController alloc] init];
                 [self.navigationController pushViewController:secondCtl animated:YES];
             }break;
                 
             case 102:
             {
+                ThirdViewController *thirdCtl = [[ThirdViewController alloc] init];
                 [self.navigationController pushViewController:thirdCtl animated:YES];
             }break;
                 
             case 103:
             {
+                FourthViewController *fourthCtl = [[FourthViewController alloc] init];
                 [self.navigationController pushViewController:fourthCtl animated:YES];
             }break;
                 
             case 104:
             {
+                FifthViewController *fifthCtl = [[FifthViewController alloc] init];
                 [self.navigationController pushViewController:fifthCtl animated:YES];
             }break;
                 
@@ -74,8 +72,8 @@
                 break;
         }
     };
-    
     [mainScrollView loadAutoPageScrollViewMainFunction];
+    
     [self.view addSubview:mainScrollView];
 }
 
