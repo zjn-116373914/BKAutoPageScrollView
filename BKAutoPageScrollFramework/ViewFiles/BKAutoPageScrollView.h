@@ -22,9 +22,9 @@ typedef void(^blockOfAutoPageScrollView)(NSInteger);
 /**最终加载[主方法]**/
 - (void)loadAutoPageScrollViewMainFunction;
 
-/*mainTimer计时器[启动]*/
+/*mainTimer翻页计时器[启动]*/
 - (void)playMainTimerAction;
-/*mainTimer计时器[关闭]*/
+/*mainTimer翻页计时器[关闭]*/
 - (void)stopMainTimerAction;
 
 @end

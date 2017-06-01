@@ -172,7 +172,7 @@
 #pragma mark ---------------------------------------------------------------------------
 
 #pragma mark - mainTimer计时器操作方法
-/*mainTimer计时器[启动]*/
+/*mainTimer翻页计时器[启动]*/
 - (void)playMainTimerAction
 {
     if(self.mainTimer == nil)
@@ -181,7 +181,7 @@
     }
 }
 
-/*mainTimer计时器[关闭]*/
+/*mainTimer翻页计时器[关闭]*/
 - (void)stopMainTimerAction
 {
     if(self.mainTimer != nil)
