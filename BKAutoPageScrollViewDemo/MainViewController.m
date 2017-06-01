@@ -34,7 +34,7 @@
     [mainImagesMarr addObject:@"IMG_05.png"];
     
     BKAutoPageScrollView *mainScrollView = [[BKAutoPageScrollView autoPageScrollView] initImagesNameArray:mainImagesMarr];
-    mainScrollView.blockToTagImageViewAction = ^(NSInteger tagOfImageView)
+    mainScrollView.blockToTapImageViewAction = ^(NSInteger tagOfImageView)
     {
         switch (tagOfImageView)
         {

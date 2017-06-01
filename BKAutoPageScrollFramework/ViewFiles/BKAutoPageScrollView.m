@@ -219,7 +219,7 @@
 #pragma mark - 控件以及手势[点击事件]
 - (void)TapGestureAction:(UIGestureRecognizer*)sender
 {
-    self.blockToTagImageViewAction(sender.view.tag);
+    self.blockToTapImageViewAction(sender.view.tag);
     
 }
 #pragma mark ---------------------------------------------------------------------------

@@ -3,7 +3,7 @@ typedef void(^blockOfAutoPageScrollView)(NSInteger);
 
 
 @interface BKAutoPageScrollView : UIView
-@property(nonatomic,copy) blockOfAutoPageScrollView blockToTagImageViewAction;
+@property(nonatomic,copy) blockOfAutoPageScrollView blockToTapImageViewAction;
 
 /**[初始化]**/
 + (instancetype)autoPageScrollView;
